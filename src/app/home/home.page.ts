@@ -31,6 +31,12 @@ export class HomePage {
    async leer() {
     this.dato = await this.native.obtenerDato('clave');
    }
+
+   
+   foto: string | null | undefined = null;
+    async capturarFoto() {
+    this.foto = await this.native.tomarFoto();
+  }
 }
 
   
