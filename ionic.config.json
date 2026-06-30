@@ -1,0 +1,7 @@
+{
+  "name": "nativeApp_Javier",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
