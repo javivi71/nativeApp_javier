@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>portfolio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- ion-header collapse="condense"> -->
+    <ion-header >
+    <ion-toolbar>
+      <ion-title size="large">Listado de Posts</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+   <ion-spinner *ngIf="loading"></ion-spinner>
+    <ion-card *ngFor="let post of posts">
+     <ion-card-header>
+       <ion-card-title>{{ post.title }}</ion-card-title>
+     </ion-card-header>
+    <ion-card-content> 
+      {{ post.body }}
+    </ion-card-content>
+   </ion-card>
+
+</ion-content>
+

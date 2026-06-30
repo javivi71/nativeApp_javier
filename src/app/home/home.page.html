@@ -13,6 +13,28 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-list>
+    <ion-item routerLink="/portfolio">Portfolio</ion-item>
+    <ion-item routerLink="/contacto">Contacto</ion-item>
+    <ion-item routerLink="/nosotros">Nosotros</ion-item> 
+  </ion-list>
+
+  <ion-button (click)="obtenerUbicacion()">
+Obtener ubicación
+</ion-button>
+<p >
+Lat: {{ lat }} - Lng: {{ lng }}
+</p>
+<ion-button (click)="guardar()">
+Guardar dato
+</ion-button>
+<ion-button (click)="leer()">
+Leer dato
+</ion-button>
+<p >
+Valor: {{ dato }}
+</p>
+
   <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
